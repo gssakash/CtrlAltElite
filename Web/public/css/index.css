@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#index{
+    margin-top: 40px;
+    background-color: purple;
+}
