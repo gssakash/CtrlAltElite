@@ -1,7 +1,30 @@
 <%- include("partials/header") %>
 
-    <section id="index">
-        <h1>Home page</h1>
-    </section>
+<section id="index">
+    <div class="search">
+        <form method="post">
+            <input title="Search" value="" type="submit" class="button">
+            <input type="text" class="textbox" placeholder="Search">
+        </form>
+    </div>
+    <div class="carousel" data-flickity='{ "autoPlay": 3000, "bgLazyLoad": true,"pageDots": false, "prevNextButtons": false, "selectedAttraction": 0.01,
+    "friction": 0.15}'>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+     <div class="carousel-cell"></div>
+    </div>
+
+
+    
+</section>
 
 <%- include("partials/footer") %>

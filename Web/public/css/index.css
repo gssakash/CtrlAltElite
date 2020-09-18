@@ -1,8 +1,136 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+ }
+
+body {
+    font-family: sans-serif; 
 }
-#index{
-    margin-top: 40px;
-    background-color: purple;
+
+#index form {
+    outline: 0;
+    float: left;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    border-radius: 4px;
+    position: absolute;
+    top: 90px;
+    left: 25%;
+    width: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#index form > .textbox {
+    outline: 0;
+    height: 42px;
+    width: 90%;
+    line-height: 42px;
+    padding-top: 3px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #5c5c5c;
+    border: 0;
+    float: left;
+    -webkit-border-radius: 4px 0 0 4px;
+    border-radius: 4px 0 0 4px;
+}
+
+#index form > .textbox:focus {
+    outline: 0;
+    background-color: #FFF;
+}
+
+#index form > .button {
+    outline: 0;
+    background: none;
+    color: rgb(7,51,161);
+    float: left;
+    height: 46px;
+    width: 46px;
+    text-align: center;
+    line-height: 42px;
+    border: 0;
+    /* color: #FFF; */
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: 16px;
+    text-rendering: auto;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    transition: background-color .4s ease;
+    border-radius: 4px;
+}
+
+#index .carousel {
+    margin:0px 10px;
+    position: relative;
+    top: 90px;
+}
+#index .carousel-cell {
+    width: 66%;
+    height: 350px;
+    margin-right: 10px;
+    border-radius: 5px;
+    background-position: center center;
+    background-size: contain;
+}
+#index .carousel-cell:nth-child(1){
+    background:url('https://img2.hkrtcdn.com/12972/bnr_1297161_o.jpg');
+}
+#index .carousel-cell:nth-child(2){
+    background:url('https://img10.hkrtcdn.com/12972/bnr_1297169_o.jpg');
+}
+#index .carousel-cell:nth-child(3){
+    background:url('https://img6.hkrtcdn.com/12972/bnr_1297165_o.jpg');
+}
+#index .carousel-cell:nth-child(4){
+    background:url('https://img8.hkrtcdn.com/12761/bnr_1276097_o.jpg');
+}
+#index .carousel-cell:nth-child(5){
+    background:url('https://img6.hkrtcdn.com/12869/bnr_1286805_o.jpg');
+}
+#index .carousel-cell:nth-child(6){
+    background:url('https://img10.hkrtcdn.com/12869/bnr_1286849_o.jpg');
+}
+#index .carousel-cell:nth-child(7){
+    background:url('https://img2.hkrtcdn.com/12972/bnr_1297161_o.jpg');
+}
+#index .carousel-cell:nth-child(8){
+    background:url('https://img10.hkrtcdn.com/12972/bnr_1297169_o.jpg');
+}
+#index .carousel-cell:nth-child(9){
+    background:url('https://img6.hkrtcdn.com/12972/bnr_1297165_o.jpg');
+}
+#index .carousel-cell:nth-child(10){
+    background:url('https://img8.hkrtcdn.com/12761/bnr_1276097_o.jpg');
+}
+#index .carousel-cell:nth-child(11){
+    background:url('https://img6.hkrtcdn.com/12869/bnr_1286805_o.jpg');
+}
+#index .carousel-cell:nth-child(12){
+    background:url('https://img10.hkrtcdn.com/12869/bnr_1286849_o.jpg');
+}
+
+
+@media(max-width:992px){
+    #index form{
+        left: 5%;
+        width: 90%;
+    }
+    #index .carousel-cell {
+        width: 85%;
+        margin: 2px;
+    }
+}
+@media(max-width:510px){
+    #index form{
+        left: 5%;
+        width: 90%;
+    }
+    #index form > .textbox {
+        width: 80%;
+    }
+    #index .carousel-cell {
+        height: 250px;
+        width: 80%;
+        margin: 2px;
+    }
 }
