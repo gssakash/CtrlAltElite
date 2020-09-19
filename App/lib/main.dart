@@ -206,7 +206,7 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Image.asset('images/logoTab.png',width: 200,height: 60,fit: BoxFit.contain,)
+                    Image.asset('images/logoTab.png',width: 150,height: 80,fit: BoxFit.contain,)
                   ],
                 ),
                 _buildEmailRow(),
@@ -392,7 +392,7 @@ class _SignupPageState extends State<Page2> {
       children: <Widget>[
         FlatButton(
           onPressed: () {},
-          child: Text("Already Registered ?",
+          child: Text("",
             style: TextStyle(
               fontSize:  MediaQuery.of(context).size.height / 60,
             ),
@@ -418,7 +418,7 @@ class _SignupPageState extends State<Page2> {
             ),
             onPressed: () {},
             child: Text(
-              "Sign In",
+              "Sign Up",
               style: TextStyle(
                 color: Colors.white,
                 letterSpacing: 1.5,
@@ -498,7 +498,7 @@ class _SignupPageState extends State<Page2> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Image.asset('images/logoTab.png',width: 200,height: 80,fit: BoxFit.contain,)
+                    Image.asset('images/logoTab.png',width: 150,height: 80,fit: BoxFit.contain,)
                   ],
                 ),
                 _buildEmailRow(),
@@ -530,7 +530,7 @@ class _SignupPageState extends State<Page2> {
             child: RichText(
               text: TextSpan(children: [
                 TextSpan(
-                  text: 'Already Signed in ? ',
+                  text: 'Already signed in ? ',
                   style: TextStyle(
                     color: Colors.black,
                     fontSize: MediaQuery.of(context).size.height / 60,
