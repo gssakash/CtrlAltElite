@@ -2,32 +2,19 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:med_care/signup_page.dart';
+import 'package:med_care/main.dart';
 import 'constants.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
-  // This widget is the root of your application.
+class SignUp extends StatefulWidget {
   @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: LoginPage(),
-    );
-  }
+  _SignupPageState createState() => _SignupPageState();
 }
 
-class LoginPage extends StatefulWidget {
-  @override
-  _LoginPageState createState() => _LoginPageState();
-}
-
-class _LoginPageState extends State<LoginPage> {
+class _SignupPageState extends State<SignUp> {
   String email, password;
+  bool isSignIn = false;
   FirebaseAuth _auth = FirebaseAuth.instance;
   FirebaseUser _user;
-  bool isSignIn = false;
   GoogleSignIn _googleSignIn = new GoogleSignIn();
   Widget _buildLogo() {
     return Row(
@@ -75,12 +62,7 @@ class _LoginPageState extends State<LoginPage> {
     });
   }
 
-
   Widget _buildEmailRow() {
-    Container(
-      margin: EdgeInsets.only(top: 80),
-
-    );
     return Padding(
       padding: EdgeInsets.all(8),
       child: TextFormField(
@@ -100,6 +82,27 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 
+  Widget _buildContactRow() {
+    return Padding(
+      padding: EdgeInsets.all(8),
+      child: TextFormField(
+        keyboardType: TextInputType.text,
+        obscureText: true,
+        onChanged: (value) {
+          setState(() {
+            password = value;
+          });
+        },
+        decoration: InputDecoration(
+          prefixIcon: Icon(
+            Icons.phone,
+            color: mainColor,
+          ),
+          labelText: 'Phone no.',
+        ),
+      ),
+    );
+  }
   Widget _buildPasswordRow() {
     return Padding(
       padding: EdgeInsets.all(8),
@@ -127,18 +130,14 @@ class _LoginPageState extends State<LoginPage> {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
-        Container(
-          margin: EdgeInsets.only(top: 25),
-        ),
         FlatButton(
           onPressed: () {},
-
-          child: Text("Forgot password?",
-          style:TextStyle(
-          fontSize:  MediaQuery.of(context).size.height / 60,
+          child: Text("",
+            style: TextStyle(
+              fontSize:  MediaQuery.of(context).size.height / 60,
+            ),
+          ),
         ),
-    ),
-        )
       ],
     );
   }
@@ -148,9 +147,9 @@ class _LoginPageState extends State<LoginPage> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Container(
-          height: 1.4 * (MediaQuery.of(context).size.height / 20),
+          height: 1.4 * (MediaQuery.of(context).size.height / 30),
           width: 5 * (MediaQuery.of(context).size.width / 10),
-          margin: EdgeInsets.only(bottom: 10,top: 20),
+          margin: EdgeInsets.only(bottom: 20),
           child: RaisedButton(
             elevation: 5.0,
             color: mainColor,
@@ -159,7 +158,7 @@ class _LoginPageState extends State<LoginPage> {
             ),
             onPressed: () {},
             child: Text(
-              "Login",
+              "Sign Up",
               style: TextStyle(
                 color: Colors.white,
                 letterSpacing: 1.5,
@@ -177,7 +176,7 @@ class _LoginPageState extends State<LoginPage> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(bottom: 20,top: 10),
+          margin: EdgeInsets.only(bottom: 5),
           child: Text(
             '- OR -',
             style: TextStyle(
@@ -198,8 +197,8 @@ class _LoginPageState extends State<LoginPage> {
             handleSignIn();
           },
           child: Container(
-            height: 60,
-            width: 60,
+            height: 40,
+            width: 40,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: mainColor,
@@ -210,7 +209,6 @@ class _LoginPageState extends State<LoginPage> {
                     blurRadius: 6.0)
               ],
             ),
-
             child: Icon(
               FontAwesomeIcons.google,
               color: Colors.white,
@@ -263,6 +261,7 @@ class _LoginPageState extends State<LoginPage> {
                   ],
                 ),
                 _buildEmailRow(),
+                _buildContactRow(),
                 _buildPasswordRow(),
                 _buildForgetPasswordButton(),
                 _buildLoginButton(),
@@ -284,28 +283,33 @@ class _LoginPageState extends State<LoginPage> {
           padding: EdgeInsets.only(top: 40),
           child: FlatButton(
             onPressed: () {
-              Navigator.push(context, new MaterialPageRoute(builder : (context) => SignUp()
-              ));
+
             },
-            child: RichText(
-              text: TextSpan(children: [
-                TextSpan(
-                  text: "Don't have an account? ",
-                  style: TextStyle(
-                    color: Colors.black,
-                    fontSize: MediaQuery.of(context).size.height / 60,
-                    fontWeight: FontWeight.w400,
+            child: GestureDetector(
+              onTap: (){
+                Navigator.push(context, new MaterialPageRoute(builder : (context) => LoginPage()
+                ));
+              },
+              child: RichText(
+                text: TextSpan(children: [
+                  TextSpan(
+                    text: 'Already signed in ? ',
+                    style: TextStyle(
+                      color: Colors.black,
+                      fontSize: MediaQuery.of(context).size.height / 60,
+                      fontWeight: FontWeight.w400,
+                    ),
                   ),
-                ),
-                TextSpan(
-                  text: 'Sign Up',
-                  style: TextStyle(
-                    color: mainColor,
-                    fontSize: MediaQuery.of(context).size.height / 50,
-                    fontWeight: FontWeight.bold,
-                  ),
-                )
-              ]),
+                  TextSpan(
+                    text: 'Login',
+                    style: TextStyle(
+                      color: mainColor,
+                      fontSize: MediaQuery.of(context).size.height / 50,
+                      fontWeight: FontWeight.bold,
+                    ),
+                  )
+                ]),
+              ),
             ),
           ),
         ),
@@ -348,4 +352,3 @@ class _LoginPageState extends State<LoginPage> {
     );
   }
 }
-
