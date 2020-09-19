@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'constants.dart';
 
 void main() => runApp(MyApp());
@@ -23,6 +24,10 @@ class LoginPage extends StatefulWidget {
 
 class _LoginPageState extends State<LoginPage> {
   String email, password;
+  FirebaseAuth _auth = FirebaseAuth.instance;
+  FirebaseUser _user;
+  bool isSignIn = false;
+  GoogleSignIn _googleSignIn = new GoogleSignIn();
   Widget _buildLogo() {
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
@@ -41,6 +46,34 @@ class _LoginPageState extends State<LoginPage> {
       ],
     );
   }
+
+  Future<void> handleSignIn() async {
+    GoogleSignInAccount googleSignInAccount = await _googleSignIn.signIn();
+    GoogleSignInAuthentication googleSignInAuthentication =
+    await googleSignInAccount.authentication;
+
+    AuthCredential credential = GoogleAuthProvider.getCredential(
+        idToken: googleSignInAuthentication.idToken,
+        accessToken: googleSignInAuthentication.accessToken);
+
+    AuthResult result = (await _auth.signInWithCredential(credential));
+
+    _user = result.user;
+
+    setState(() {
+      isSignIn = true;
+    });
+  }
+
+  Future<void> gooleSignout() async {
+    await _auth.signOut().then((onValue) {
+      _googleSignIn.signOut();
+      setState(() {
+        isSignIn = true;
+      });
+    });
+  }
+
 
   Widget _buildEmailRow() {
     Container(
@@ -160,7 +193,9 @@ class _LoginPageState extends State<LoginPage> {
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         GestureDetector(
-          onTap: () {},
+          onTap: () {
+            handleSignIn();
+          },
           child: Container(
             height: 60,
             width: 60,
@@ -186,7 +221,24 @@ class _LoginPageState extends State<LoginPage> {
   }
 
   Widget _buildContainer() {
-    return Row(
+    return isSignIn
+        ? Center(
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: <Widget>[
+          CircleAvatar(
+            backgroundImage: NetworkImage(_user.photoUrl),
+          ),
+          Text(_user.displayName),
+          OutlineButton(
+            onPressed: () {
+              gooleSignout();
+            },
+            child: Text("Logout"),
+          )
+        ],
+      ),
+    ): Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
         ClipRRect(
