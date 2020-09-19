@@ -74,12 +74,14 @@
   }
 
   #profile .first-circle{
+      cursor: pointer;
       background-image: url('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png');
       background-position-y:center;
       background-size:contain;
   }
 
   #profile  #user-detail{
+      cursor: pointer;
       margin-left:0px;
       text-align: left;
       margin-bottom:0px;

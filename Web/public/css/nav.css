@@ -79,14 +79,18 @@ html {
     cursor: pointer;
     display: none;
 }
+#navigation .cart a{
+  text-decoration: none;
+}
 #navigation .cart i{
+    color:  rgb(7,51,161)!important;
     font-size: 22px;
 }
 #navigation .cart sup{
     background-color: red;
     color:white;
     top: -15px;
-    left: -8px;
+    left: -5px;
     padding: 1px 1px 1px 3px;
     border-radius: 50%;
 }
