@@ -18,6 +18,9 @@ app.get("/profile", (req,res) => {
 app.get("/cart", (req,res) => {
   res.render("cart", {page: "cart"});
 });
+app.get("/contact", (req,res) => {
+  res.render("contact", {page: "contact"});
+});
 
 
 let port = process.env.PORT;
