@@ -10,8 +10,8 @@
               <form action="#">
                   <h2>Create an Account</h2>
                   <span>or use your email for registration</span>
-                  <input type="text" placeholder="Name" required />
-                  <input type="email" placeholder="Email" required/>
+                  <input type="text" placeholder="Name" id="name" required />
+                  <input type="email" placeholder="Email" id="email" required/>
                   <input type="password" placeholder="Password" required />
                   <button class="sign-up-btn mt-3">Sign Up</button>
               </form>
@@ -19,8 +19,8 @@
           <div class="form-container sign-in-container">
               <form action="#">
                   <img src="images/logotab.png" alt="" class="mb-3">
-                  <input type="email" placeholder="Email" required/>
-                  <input type="password" placeholder="Password" required/>
+                  <input type="email" placeholder="Email" id="semail" autocomplete="off" required/>
+                  <input type="password" placeholder="Password" id="password" autocomplete="off" required/>
                   <a href="#">Forgot your password?</a>
                   <button class="sign-in-btn">Sign In</button>
               </form>
@@ -32,7 +32,7 @@
                       <p>To keep connected with us please login with your personal info</p>
                       <button  id="signIn">Sign In</button>
                   </div>
-                  <div class="overlay-panel overlay-right">
+                  <div class="overlay-panel overlay-right mr-3">
                       <h1 class="para-header">Hello, Friend!</h1>
                       <p class="para-text">Enter your personal details and start journey with us</p>
                       <button class="button-signin " id="signUp">Sign Up</button>

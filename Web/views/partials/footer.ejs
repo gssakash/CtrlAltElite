@@ -1,4 +1,36 @@
-
+<div class="modal fade" id="myModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title font-weight-bolder" id="exampleModalLabel">About Us</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          
+          <p><b>Med-I-Care</b>, Inc. Lorem ipsum dolor sit amet consectetur 
+            adipisicing elit. Reiciendis dolorem aspernatur Lorem, ipsum.
+            tempore quaerat nobis dolor nisi laborum, vero dignissimos vel?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+              Soluta, accusamus illo. Eaque placeat iste id adipisci blanditiis!</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro placeat facere 
+              atque autem dolores illum delectus minima deserunt, sed quas temporibus ut excepturi 
+              voluptate sapiente tempora mollitia ad voluptas, fugiat praesentium? Sint reprehenderit
+               id, eius quas quos porro nulla mollitia.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur neque ea 
+                vitae dolores. Accusamus libero nobis odit rem at pariatur tempora voluptates,
+                 sed commodi eveniet facere illum dolores alias harum ipsum consectetur, eligendi
+                 voluptatibus, possimus rerum. Minima eum ullam ad esse error quibusdam quidem,
+                  harum officiis voluptatibus nemo minus tempora.</p>   
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-dark">Read More <i class="fas fa-angle-down"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
 <section id="footer">
     <footer class="footer-section">
         <div class="container">
@@ -57,16 +89,16 @@
                             <div class="footer-widget-heading">
                                 <h3>Useful Links</h3>
                             </div>
-                            <ul>
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">about</a></li>
+                            <ul id="ftr">
+                                <li><a href="/">Home</a></li>
+                                <li data-toggle="modal" data-target="#myModal5"><a href="#ftr">about us</a></li>
                                 <li><a href="#">services</a></li>
                                 <li><a href="#">portfolio</a></li>
-                                <li><a href="#">Contact</a></li>
-                                <li><a href="#">About us</a></li>
+                                <li><a href="#">appointment</a></li>
+                                <li><a href="#">team</a></li>
                                 <li><a href="#">Our Services</a></li>
                                 <li><a href="#">Expert Team</a></li>
-                                <li><a href="#">Contact us</a></li>
+                                <li><a href="/contact">Contact us</a></li>
                                 <li><a href="#">Latest News</a></li>
                             </ul>
                         </div>
