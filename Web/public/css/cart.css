@@ -19,6 +19,7 @@
     font-family: 'Lobster', cursive;
     font-size: 45px;
     color: rgb(7,51,161);
+    letter-spacing: 2px;
 }
 #cart label{
     font-weight: 600;
