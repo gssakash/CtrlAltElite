@@ -23,7 +23,7 @@ We have came up with a solution for our the healthcare sector, by creating a por
 
 <p align="center"><b>https://shop-site-hackchennai.herokuapp.com/</b></p>
 
-### Run the application:
+### Run the applictaion:
 
 * Clone the project into the local-system.
 * Go to the folder where the project is cloned.
@@ -32,6 +32,8 @@ We have came up with a solution for our the healthcare sector, by creating a por
 * Type "node app.js" to run the application.
 * For PPT
 *<a href="https:"https://drive.google.com/file/d/1mw27FpOsrXehfBmnWqk4JyuAQ3cDdXHu/view?usp=sharing"></a>
+  For youtube 
+*<a href="https:"https://youtu.be/hai-lC7Z_FA"></a>
 
 <h2 align= "center"><b>We have kept the project under further review with time.</b></h2>
 
