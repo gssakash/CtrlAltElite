@@ -32,11 +32,16 @@ We have came up with a solution for our the healthcare sector, by creating a por
 * Type "node app.js" to run the application.
 * For PPT
 *<p align="center"><b>https://drive.google.com/file/d/1mw27FpOsrXehfBmnWqk4JyuAQ3cDdXHu/view?usp=sharing</b></p>
-  For youtube 
+*  For youtube 
 *<p align="center"><b>https://youtu.be/hai-lC7Z_FA</b></p>
 
 
 <h2 align= "center"><b>We have kept the project under further review with time.</b></h2>
 
-
+### Future Plans : 
+* We have to make the website responsive.
+* We have to connect the website to Firebase.
+* We have to add appointments sections where one can consult doctos online.
+* We have to make the "cart" functional.
+* We have to add more products using DataBase.
 
