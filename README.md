@@ -23,7 +23,7 @@ We have came up with a solution for our the healthcare sector, by creating a por
 
 <p align="center"><b>https://shop-site-hackchennai.herokuapp.com/</b></p>
 
-### Run the applictaion:
+### Run the application:
 
 * Clone the project into the local-system.
 * Go to the folder where the project is cloned.
