@@ -13,7 +13,20 @@
     <!-- flickity -->
     <link rel="stylesheet" href="https://npmcdn.com/flickity@2/dist/flickity.css">
     <script src="https://npmcdn.com/flickity@2/dist/flickity.pkgd.js"></script>
-    <title>Hackathon</title>
+
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300' rel='stylesheet' type='text/css'>
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script src="https://use.fontawesome.com/20ab91acc4.js"></script>
+    <title>Med-I-Care</title>
     <link rel="icon" href="images/Logo.png" type="image/ico" />
     <link rel="stylesheet" href="/css/<%= typeof page !== 'undefined' ? page : '' %>.css">
     <link rel="stylesheet" href="/css/nav.css">
@@ -30,11 +43,14 @@
                 <li class="nav-item">
                   <a class="nav-link" href="/"><i class="fa fa-home" aria-hidden="true"></i>Home</a>
                 </li>
-                <li class="nav-item">
+                <!-- <li class="nav-item">
                   <a class="nav-link" href="/offers"><i class="fa fa-tag" aria-hidden="true"></i>Offers</a>
-                </li>
+                </li> -->
                 <li class="nav-item">
                   <a class="nav-link" href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i>Cart</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="/contact"><i class="fa fa-envelope" aria-hidden="true"></i>Contact</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="/profile"><i class="fa fa-user" aria-hidden="true"></i>Profile</a>
@@ -42,7 +58,7 @@
               </ul>
             </div>
             <div class="cart">
-               <i class="fa fa-shopping-cart" aria-hidden="true"></i><sup>0</sup>
+               <a href="/cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i><sup>0</sup></a>
             </div>
           </nav>
       </section>

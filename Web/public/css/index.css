@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -151,12 +152,12 @@ body {
 }
 #index .container-fluid .left{
     position: absolute;
-    left: 50px;
+    left: 30px;
 }
 #index .container-fluid .right{
     /* margin-left: 80vw; */
     position: absolute;
-    right: 50px;
+    right: 20px;
 }
 #index .container-fluid .row{
     justify-content: center;
@@ -316,7 +317,38 @@ body {
      padding: 2px 3px 2px 1px;
  }   
     
+#index .categories .category{
+    font-family: 'Lobster', cursive;
+    letter-spacing: 2px;
+    padding: 10px 0;
+}
+#index .categories .row .card img{
+    height: 130px;
+    cursor: pointer;
+
+}
+#index .categories .row .card{
+    transition: 0.6s;
+    width: 15rem;
+}
+
+#index .categories .row .card:hover{
+    transform: scale(1.1);
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, .2);
+}
+
+#index .categories .row .card-body{
+    padding-bottom: 0px;
+    cursor: pointer;
+
+}
+#index .categories .row .card-body h5{
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 500;
+    font-size: 23px;
     
+}
 @media(max-width:992px){
     #index form{
             left: 5%;
@@ -326,6 +358,17 @@ body {
             width: 85%;
             margin: 2px;
         }
+    #index .container-fluid .view{
+        color: grey;
+        border: 1px solid grey;
+        margin-bottom: 10px;
+        margin-top: -50px;
+        position: absolute;
+        right: 30px;
+    }
+    #index .container-fluid .block{
+        margin-bottom: 10px;
+    }
 }
 @media(max-width:510px){
     #index form{

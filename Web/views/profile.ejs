@@ -1,8 +1,81 @@
 <%- include("partials/header") %>
-    
+
+
+
 <section id="profile" class="profile">
-    
-</section>
+   
+<section class="contact-us" id="contact-us">
+  <div class="container" id="container">
+          <div class="form-container sign-up-container">
+              <form action="#">
+                  <h2>Create an Account</h2>
+                  <span>or use your email for registration</span>
+                  <input type="text" placeholder="Name" id="name" required />
+                  <input type="email" placeholder="Email" id="email" required/>
+                  <input type="password" placeholder="Password" required />
+                  <button class="sign-up-btn mt-3">Sign Up</button>
+              </form>
+          </div>
+          <div class="form-container sign-in-container">
+              <form action="#">
+                  <img src="images/logotab.png" alt="" class="mb-3">
+                  <input type="email" placeholder="Email" id="semail" autocomplete="off" required/>
+                  <input type="password" placeholder="Password" id="password" autocomplete="off" required/>
+                  <a href="#">Forgot your password?</a>
+                  <button class="sign-in-btn">Sign In</button>
+              </form>
+          </div>
+          <div class="overlay-container">
+              <div class="overlay">
+                  <div class="overlay-panel overlay-left">
+                      <h1>Welcome Back!</h1>
+                      <p>To keep connected with us please login with your personal info</p>
+                      <button  id="signIn">Sign In</button>
+                  </div>
+                  <div class="overlay-panel overlay-right mr-3">
+                      <h1 class="para-header">Hello, Friend!</h1>
+                      <p class="para-text">Enter your personal details and start journey with us</p>
+                      <button class="button-signin " id="signUp">Sign Up</button>
+                  </div>
+              </div>
+          </div>
+          </div>
+    </section>
+
+
+    <div id="profile-container">
+      <div class="profile-bg">
+        <div class="first-circle">
+        </div>
+        <div class="profile-bg-text">
+        <p id="user-detail" class="user-detail-1">Lorem Ipsum</p>
+        <p id="user-detail" class="user-detail-2">xyz@gmail.com</p>
+      </div>
+    </div>
+    <div class="user-actions-container">
+      <div class="user-profile">
+        <i class="fas fa-user-circle" aria-hidden="true"></i>
+        <a id="links" target="_blank" href="#"><p>Edit profile</p></a>
+      </div>
+      <div class="user-profile">
+        <i class="fas fa-address-card" aria-hidden="true"></i>
+        <a id="links" target="_blank" href="#"><p>About</p></a>
+      </div>
+      <div class="user-profile">
+        <i class="fas fa-comments" aria-hidden="true"></i>
+        <a id="links" target="_blank" href="#"><p>Feedback</p></a>
+      </div>
+      <div class="cart">
+        <i class="fas fa-shopping-cart" aria-hidden="true"></i>
+       <a id="links"  target="_blank" href="#"><p>View cart</p> </a>
+      </div>
+      <div class="logout">
+        <i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+        <a id="links"  target="_blank" href="#"><p>Logout</p></a>
+      </div>
+    </div>
+    </div>
+    </section>
     
 
 <%- include("partials/footer") %>
