@@ -21,7 +21,7 @@ We have came up with a solution for our the healthcare sector, by creating a por
 
 <h2 align= "center"><b>Website Link</b></h2>
 
-<p align="center"><b>https://shop-site-hackchennai.herokuapp.com</b></p>
+<p align="center"><b>https://shop-site-hackchennai.herokuapp.com/</b></p>
 
 ### Run the applictaion:
 
@@ -30,4 +30,8 @@ We have came up with a solution for our the healthcare sector, by creating a por
 * Open cmd and type npm install.
 * Make sure you run the mongodb.
 * Type "node app.js" to run the application.
+
+<h2 align= "center"><b>We have kept the project under further review with time.</b></h2>
+
+
 
