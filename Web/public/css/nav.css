@@ -14,7 +14,7 @@ html {
     width: 100%;
     height: 100%;
 }
-#myModal{
+.modal{
     z-index: 999999999!important;
     background: rgba(0, 0, 0, 0.5);
     
@@ -123,137 +123,6 @@ html {
     }
 }
 
-/* modal  */
-
-#login #loginModal .modal-dialog {
-    max-width: 400px;
-    height: 500px;
-}
-#login #signupModal .modal-dialog {
-    max-width: 430px;
-}
-#login .modal-dialog .modal-content {
-    padding: 1rem;
-}
-  
-#login .modal-header .close {
-    margin-top: -1.5rem;
-}
-
-#login .form-logo
-{
-    padding-right:25px;
-}
-
-#login .button-signin, #login .register-text{
-    margin-top: 20px;
-    font-family:'Roboto',sans-serif;
-}
-
-#login .register-text{
-    padding-bottom: 20px!important;
-    padding-right:180px;
-    color:#0733a1;
-    cursor: pointer;
-}
-#login .register-text:hover{
-    text-decoration: underline;
-}
-
-#login .button-signin,
-#login .google-button {
-    background-color: #0733a1;
-    color:white;
-    font-size:18px;
-}
-
-#login .button-signin{
-    width: 70%;
-    margin-left: 45px;
-}
-
-#login .google-button{
-    padding-top:7.5px;
-    padding-bottom: 7.5px;
-}
-
-#login .btn.focus, .btn:focus {
-    outline: 0;
-    box-shadow:0;
-}
-
-#login .button-signin:hover,#login .google-button:hover{
-    background-color:rgb(0, 37, 131);
-}
-
-
-#login .form-title {
-    margin: -2rem 0rem 2rem;
-}
-
-#login .btn-round {
-    border-radius: 3rem;
-}
-
-#login .form-control {
-    border: 0;
-    border-bottom: 1px solid black;
-    width: 100%;
-    border-radius:0;
-}
-
-#login .form-control:focus {
-    outline: none;
-}
-
-#login .form-control:focus {
-    color: #495057;
-    background-color: #fff;
-    border-color: black;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem white;
-}
-
-#login .form-inner{
-    display:flex;
-    align-items: center;
-    justify-content:space-around;
-    color:#0733a1;
-}
-
-
-#login .delimiter {
-    font-size: 16px ;
-    opacity: 0.7;
-    padding: 1rem;
-}
-
-#login .social-buttons .btn {
-    margin: 0 0.5rem 1rem;
-}
-
-#login .signup-section {
-    padding: 0.3rem 0rem;
-}
-
-#login #login-text
-{
-    color:#0733a1;
-     font-weight: 700;
-}
-#login #login-text:hover
-{
-    color:rgb(0, 37, 131);
-    text-decoration: underline;
-}
-
-#login a:hover{
-    text-decoration: none;
-}
-
-#login .model-footer{
-    border-top:1px solid white;
-}
 
 /* footer  */
 #footer{
