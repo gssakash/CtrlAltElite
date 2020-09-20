@@ -30,6 +30,8 @@ We have came up with a solution for our the healthcare sector, by creating a por
 * Open cmd and type npm install.
 * Make sure you run the mongodb.
 * Type "node app.js" to run the application.
+* For PPT
+*<a href="https:"https://drive.google.com/file/d/1mw27FpOsrXehfBmnWqk4JyuAQ3cDdXHu/view?usp=sharing"></a>
 
 <h2 align= "center"><b>We have kept the project under further review with time.</b></h2>
 
