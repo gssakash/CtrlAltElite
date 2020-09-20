@@ -31,9 +31,10 @@ We have came up with a solution for our the healthcare sector, by creating a por
 * Make sure you run the mongodb.
 * Type "node app.js" to run the application.
 * For PPT
-*<a href="https:"https://drive.google.com/file/d/1mw27FpOsrXehfBmnWqk4JyuAQ3cDdXHu/view?usp=sharing"></a>
+*<p align="center"><b>https://drive.google.com/file/d/1mw27FpOsrXehfBmnWqk4JyuAQ3cDdXHu/view?usp=sharing</b></p>
   For youtube 
-*<a href="https:"https://youtu.be/hai-lC7Z_FA"></a>
+*<p align="center"><b>https://youtu.be/hai-lC7Z_FA</b></p>
+
 
 <h2 align= "center"><b>We have kept the project under further review with time.</b></h2>
 
