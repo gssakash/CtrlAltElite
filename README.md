@@ -9,7 +9,9 @@ We have came up with a solution for our the healthcare sector, by creating a por
 -nodeJS and EJS
 -Express JS.
 
-<h2 align= "center"><b>App Download Link</b></h2>
 
-<p align="center"><b> </b></p>
+
+<h2 align= "center"><b>Website Link</b></h2>
+
+<p align="center"><b>https://shop-site-hackchennai.herokuapp.com/</b></p>
 
